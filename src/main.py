@@ -15,7 +15,7 @@ print('Class init')
 
 class Player:
     def __init__(self, movie):
-        self.movie = movie
+        self.movie = movi
         self.process = None
 
     def start(self):
@@ -25,7 +25,7 @@ class Player:
 #                     stdout=DEVNULL, close_fds=True, bufsize=0)
         self.process = Popen([__player_name__, self.movie], stdin=PIPE,
                              stdout=DEVNULL, close_fds=True, bufsize=0)
-        self.process.stdin.write(start_command.encode('UTF-8'))  # start playing
+        # self.process.stdin.write(start_command.encode('UTF-8'))  # start playing
 
     def stop(self):
         p = self.process
