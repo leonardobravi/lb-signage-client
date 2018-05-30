@@ -25,6 +25,7 @@ class Player:
 #                     stdout=DEVNULL, close_fds=True, bufsize=0)
         self.process = Popen([__player_name__, self.movie], stdin=PIPE,
                              stdout=DEVNULL, close_fds=True, bufsize=0)
+        print(__player_name__, self.movie)
         # self.process.stdin.write(start_command.encode('UTF-8'))  # start playing
 
     def stop(self):
