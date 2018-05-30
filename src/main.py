@@ -15,7 +15,7 @@ print('Class init')
 
 class Player:
     def __init__(self, movie):
-        self.movie = movi
+        self.movie = movie
         self.process = None
 
     def start(self):
